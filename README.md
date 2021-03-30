@@ -16,6 +16,8 @@ sudo apt-get -y install openssl
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -subj '/O=example Inc./CN=tls' -keyout tls/tls.key -out tls/tls.crt
 cat tls/tls.key| base64 -w 0
 cat tls/tls.crt| base64 -w 0
+
+# And paste results to ca-secret.yaml file
 ```
 
 
